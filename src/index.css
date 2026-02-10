@@ -13,3 +13,171 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Visanet-inspired styles */
+.chat-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  background-color: transparent;
+}
+
+.chat-markdown thead {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: bold;
+}
+
+.chat-markdown th,
+.chat-markdown td {
+  border: 1px solid #374151;
+  padding: 8px;
+  text-align: left;
+  background-color: #ffffff;
+  color: black;
+}
+
+.chat-markdown tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.chat-markdown tr:hover {
+  background-color: #e5e7eb;
+}
+
+.chat-markdown {
+  overflow-x: auto;
+}
+
+.chat-markdown p {
+  margin-bottom: 0.5rem;
+}
+
+.chat-markdown h1,
+.chat-markdown h2,
+.chat-markdown h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.chat-markdown h1 {
+  font-size: 1.5em;
+}
+
+.chat-markdown h2 {
+  font-size: 1.3em;
+}
+
+.chat-markdown h3 {
+  font-size: 1.1em;
+}
+
+.chat-markdown ul,
+.chat-markdown ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat-markdown li {
+  margin-bottom: 0.25rem;
+}
+
+.chat-markdown code {
+  background-color: #f3f4f6;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.chat-markdown pre {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+
+.chat-markdown pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.chat-markdown blockquote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.chat-markdown strong {
+  font-weight: bold;
+}
+
+.chat-markdown em {
+  font-style: italic;
+}
+
+.chat-markdown a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.chat-markdown a:hover {
+  color: #1d4ed8;
+}
+
+/* Progress bar animations */
+.progress-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6);
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.stage-indicator {
+  transition: all 0.3s ease-in-out;
+}
+
+.stage-active {
+  background-color: #3b82f6;
+  color: white;
+  transform: scale(1.05);
+}
+
+.stage-completed {
+  background-color: #10b981;
+  color: white;
+}
+
+.stage-pending {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+/* Slide animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideDown 0.3s ease-out;
+}
