@@ -187,10 +187,10 @@ export default function IGVChatbot() {
                   />
                 </div>
                 <h2 className="text-3xl font-semibold text-gray-900 mb-3">
-                  Bienvenido al Asistente IGV
+                 IBM RPA
                 </h2>
                 <p className="text-gray-600 max-w-lg mb-8 text-lg">
-                  Haz preguntas sobre RPA, automatización de procesos y más. ¡Comencemos!
+                  Haz preguntas sobre RPA, automatización de procesos y más. 
                 </p>
 
                 {/* Ejemplos de preguntas - Visanet style */}
